@@ -22,7 +22,7 @@ task wrapper(type: Wrapper) {
 test {
   useJUnit()
   reports {
-    junitXml.enabled = false
+    junitXml.enabled = true
     html.enabled = true
   }
 }
