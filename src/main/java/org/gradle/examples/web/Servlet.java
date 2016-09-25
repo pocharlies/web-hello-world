@@ -13,7 +13,8 @@ public class Servlet extends HttpServlet
       throws IOException
    {
       PrintWriter pw = response.getWriter();
-      pw.println("hello, world");
+      response.addHeader("did-it-work","yes");
+      pw.print("hello, world");
       pw.close();
    }
 }
